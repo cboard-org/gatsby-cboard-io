@@ -13,22 +13,27 @@ module.exports = {
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/cboard-org',
+    },
+    {
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/cboardapp/',
     },
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://www.linkedin.com/company/cboard/',
     },
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      url: 'https://twitter.com/cboard_io',
     },
     {
       icon: 'fa-facebook-f',
       name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://www.facebook.com/cboardAAC/',
     },
   ],
 };

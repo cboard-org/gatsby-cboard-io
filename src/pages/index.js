@@ -11,6 +11,7 @@ import YouTube from 'react-youtube';
 import demo1 from '../assets/images/cant-speak-iphone-english.png';
 import demo2 from '../assets/images/home-board-ipad-hebrew.png';
 import gplay from '../assets/images/google-play-badge.svg';
+import Contact from '../components/Contact';
 
 const IndexPage = () => (
   <Layout>
@@ -184,13 +185,31 @@ const IndexPage = () => (
 
     <section className="contact bg-primary" id="contact">
       <div className="container">
-        <h2>
-          We
-          <i className="fas fa-heart"></i>
-          new friends!
+        <h2>Get in touch today
         </h2>
         <Social />
+        <p>If you have any questions or queries send us a message
+           and we'll get back to you as soon as we can.</p>
+        <Contact />
       </div>
+    </section>
+
+    <section className="cta github" id="joinus">
+      <div className="cta-content">
+        <div className="container">
+          <h2>Join us on GitHub</h2>
+          <div className="col-lg-5 my-auto">
+            <p>Cboard is an open-source project, we always appreciate a helping hand,
+            if you want to contribute you are invited to our GitHub repo</p>
+          </div>
+          <a
+            href="https://github.com/cboard-org/cboard"
+            className="btn btn-outline btn-xl"
+          >Cboard GitHub
+            </a>
+        </div>
+      </div>
+      <div className="overlay"></div>
     </section>
 
     <Footer />
