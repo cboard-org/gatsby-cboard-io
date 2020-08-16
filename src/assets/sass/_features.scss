@@ -14,6 +14,9 @@ section.features {
         max-width: 325px;
         margin: 0 auto;
     }
+    .landscape {
+        max-width: 625px;
+    }
     .device-container {
         margin-bottom: 100px;
         @media(min-width: 992px) {
@@ -21,8 +24,8 @@ section.features {
         }
     }
     .feature-item {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         text-align: center;
         h3 {
             font-size: 30px;

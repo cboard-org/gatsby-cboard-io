@@ -9,6 +9,7 @@ import CboardLogo from '../components/CboardLogo/CboardLogo.component';
 import YouTube from 'react-youtube';
 
 import demo1 from '../assets/images/cant-speak-iphone-english.png';
+import demo2 from '../assets/images/home-board-ipad-hebrew.png';
 import gplay from '../assets/images/google-play-badge.svg';
 
 const IndexPage = () => (
@@ -89,7 +90,7 @@ const IndexPage = () => (
           </p>
           <hr />
         </div>
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-lg-4 my-auto">
             <div className="device-container">
               <div className="device-mockup iphone6_plus portrait white">
@@ -124,46 +125,58 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-present text-primary"></i>
-                    <h3>40+ languages</h3>
-                    <p className="text-muted">
-                    Cboard comes with support for 40 languages, support varies between operating systems.
-                    </p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-8 my-auto">
+            <div className="device-container landscape">
+              <div className="device-mockup ipad landscape white" >
+                <div className="device">
+                  <div className="screen">
+                    <img src={demo2} className="img-fluid" alt="" />
                   </div>
+                  <div className="button"></div>
                 </div>
-                <div className="col-lg-6">
-                  <div className="feature-item">
-                    <i className="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p className="text-muted">
-                      Since this theme is MIT licensed, you can use it
-                      commercially!
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 my-auto">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="feature-item">
+                  <i className="icon-present text-primary"></i>
+                  <h3>40+ languages</h3>
+                  <p className="text-muted">
+                    Cboard comes with support for 40 languages and counting!. We strongly believe that this is key to reduce inequalities among people with disabilities in the world.
                     </p>
-                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="feature-item">
+                  <i className="icon-lock-open text-primary"></i>
+                  <h3>Modern interface</h3>
+                  <p className="text-muted">
+                    We use last technology trends to design and develop Cboard. Our ultimate goal is to offer a beautiful and intuitive interface that can be navigated without reading the user help.
+                    </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
 
     <section className="cta">
       <div className="cta-content">
         <div className="container">
-          <h2>
-            Stop waiting.
-            <br />
-            Start building.
-          </h2>
-          <Scroll type="id" element="contact">
-            <a href="#contact" className="btn btn-outline btn-xl">
-              Let's Get Started!
+          <h2>Communication for everyone</h2>
+          <a
+            href="https://app.cboard.io/"
+            className="btn btn-outline btn-xl"
+          >
+            Let's Get Started!
             </a>
-          </Scroll>
         </div>
       </div>
       <div className="overlay"></div>
@@ -181,7 +194,7 @@ const IndexPage = () => (
     </section>
 
     <Footer />
-  </Layout>
+  </Layout >
 );
 
 export default IndexPage;
