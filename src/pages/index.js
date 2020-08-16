@@ -12,6 +12,7 @@ import demo1 from '../assets/images/cant-speak-iphone-english.png';
 import demo2 from '../assets/images/home-board-ipad-hebrew.png';
 import gplay from '../assets/images/google-play-badge.svg';
 import Contact from '../components/Contact';
+import HomeScroller from '../components/HomeScroller';
 
 const IndexPage = () => (
   <Layout>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Scroll from './Scroll';
-export default class Header extends Component {
+export default class HomeScroller extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,32 +36,16 @@ export default class Header extends Component {
     const { openMenu, visibilityClass } = this.state;
     return (
       <nav
-        className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
+        className={`navbar navbar-expand-lg navbar-light`}
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
-          </a>
-          <button
-            onClick={_ => this.toggleMenu(!openMenu)}
-            className={`navbar-toggler navbar-toggler-right ${
-              openMenu ? '' : 'collapsed'
-            }`}
-            type="button"
-            aria-controls="navbarResponsive"
-            aria-expanded={openMenu}
-            aria-label="Toggle navigation"
-          >
-            Menu
-            <i className="fas fa-bars"></i>
-          </button>
 
           <div
             className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
             id="navbarResponsive"
           >
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto mt-5">
               <li className="nav-item">
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
@@ -69,7 +53,7 @@ export default class Header extends Component {
                   element="download"
                 >
                   <a className="nav-link" href="#download">
-                    Blog
+                    Download
                   </a>
                 </Scroll>
               </li>
@@ -80,7 +64,7 @@ export default class Header extends Component {
                   element="whatis"
                 >
                   <a className="nav-link" href="#whatis">
-                    Help and Support 
+                    What is 
                   </a>
                 </Scroll>
               </li>
@@ -91,7 +75,7 @@ export default class Header extends Component {
                   element="features"
                 >
                   <a className="nav-link" href="#features">
-                    About
+                    Features
                   </a>
                 </Scroll>
               </li>
@@ -102,7 +86,18 @@ export default class Header extends Component {
                   element="contact"
                 >
                   <a className="nav-link" href="#contact">
-                    Donate
+                    Contact
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="joinus"
+                >
+                  <a className="nav-link" href="#joinus">
+                    Join Us
                   </a>
                 </Scroll>
               </li>
