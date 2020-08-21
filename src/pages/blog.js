@@ -12,18 +12,14 @@ const BlogPage = () => (
   <Layout>
     <Header />
     <header className="bloghead">
-      <div className="container h-100">
-        <div className="row h-100">
-          <div className="col-lg-6 my-5">
-            <h2 className="mb-5">The latest news</h2>
-            <p>Hear the latest progress on Cboard development</p>
-          </div>
-        </div>
+      <div className="container">
+        <h2 className="mb-2">The latest news</h2>
+        <p>Hear the latest progress on Cboard development</p>
       </div>
     </header>
 
     <section className="download bg-primary text-center" id="download">
-        <Blog />
+      <Blog />
     </section>
 
     <Footer />
