@@ -4,8 +4,7 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
-import CboardLogo from '../components/CboardLogo/CboardLogo.component';
-import gplay from '../assets/images/google-play-badge.svg';
+import { Link, StaticQuery, graphql } from 'gatsby';
 import Blog from '../components/Blog';
 
 const BlogPage = () => (
@@ -18,8 +17,35 @@ const BlogPage = () => (
       </div>
     </header>
 
-    <section className="download bg-primary text-center" id="download">
-      <Blog />
+    <section className="download bg-primary text-center" id="blogposts">
+      <StaticQuery
+        query={graphql`
+        query {
+          allMarkdownRemark(limit: 5) {
+            edges {
+              node {
+                id
+                frontmatter {
+                  date(formatString: "MMMM DD, YYYY")
+                  title
+                  description
+                  categories
+                  image
+                  author_staff_member
+                }
+              }
+            }
+          }
+        }`
+        }
+
+        render={data => {
+          const posts = data.allMarkdownRemark.edges
+            .filter(edge => !!edge.node.frontmatter.date);
+          return <Blog data={posts} />
+        }
+        }
+      />
     </section>
 
     <Footer />

@@ -4,18 +4,19 @@ import moment from 'moment';
 import { Link, StaticQuery, graphql } from 'gatsby';
 
 export default class Blog extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { };
+  }
   render() {
-    const data = { edges: [] };
+    const { data } = this.props;
     return (
       <div className="blogs-section section" id="Blogs">
         <div className="container">
-          <div className="section-head">
-            <h2>Blogs</h2>
-          </div>
           <ul
-            className={`blogs-list ${data.edges.length < 5 ? 'few-blogs' : ''}`}
+            className={`blogs-list ${data.length < 5 ? 'few-blogs' : ''}`}
           >
-            {data.edges.map((item, index) => {
+            {data.map((item, index) => {
               return (
                 <li key={index} className="item">
                   <div className="inner">
@@ -23,13 +24,13 @@ export default class Blog extends Component {
 
                     {item.node.featureImage ? (
                       <Img
-                        fixed={item.node.featureImage.fluid}
+                        fixed={item.node.image}
                         objectFit="cover"
                         objectPosition="50% 50%"
                       />
                     ) : (
-                      <div className="no-image"></div>
-                    )}
+                        <div className="no-image"></div>
+                      )}
                     <div className="details">
                       <h3 className="title">{item.node.title}</h3>
                       <span className="date">
