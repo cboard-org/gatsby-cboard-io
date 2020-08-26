@@ -6,7 +6,7 @@ categories:
   - cboard
   - unicef
   - europe
-image: /images/ecaro-pilot-3.png
+image: ../../assets/images/ecaro-pilot-3.png
 author_staff_member: katrina
 ---
 The UNICEF *Europe and Central Asia Regional office (ECARO)* has been piloting user testing to promote affordable assistive technology for Augmentative and Alternative Communication (AAC) in Croatia, Montenegro and Serbia.

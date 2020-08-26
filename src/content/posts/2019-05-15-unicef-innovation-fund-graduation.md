@@ -6,7 +6,7 @@ categories:
   - cboard
   - unicef
   - accessibility
-image: /images/aacgathering.jpg
+image: ../../assets/images/aacgathering.jpg
 author_staff_member: martin
 ---
 We are proud to say we have complete the process that finishes our 15 months of investment with the Unicef innovation fund.

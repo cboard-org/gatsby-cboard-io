@@ -6,7 +6,7 @@ categories:
   - cboard
   - openboard
   - open-source
-image: 
+image: ../../assets/images/screenshot-coughdrop.jpg
 author_staff_member: shay
 ---
 We at Cboard recently released a new and exiting feature: openboard support.

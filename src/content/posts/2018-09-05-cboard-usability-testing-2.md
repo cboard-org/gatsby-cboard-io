@@ -5,7 +5,7 @@ description: Feedback from patients on usability
 categories:
   - cboard
   - usability-testing
-image: /images/eipam2.jpg
+image: ../../assets/images/eipam2.jpg
 author_staff_member: katrina
 ---
 For the final two weeks of testing, we continued seeing patients from both Ciren and Eipan, but though we saw a few new patients, the majority of the visits were second sessions with previously seen patients. This was helpful in that the children were not as overwhelmed with new images, and were seeing Cboard for a second time (at least). We had created folders with few pictograms (so less visual stimulation) in order to determine whether their reactions and understanding changed from the initial visit. 

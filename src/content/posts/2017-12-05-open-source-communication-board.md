@@ -5,7 +5,7 @@ description: The beginning of Cboard
 categories:
   - cboard
   - open-source
-? image
+image: ../../assets/images/app/home-board-ipad-hebrew.png
 author_staff_member: shay
 ---
 

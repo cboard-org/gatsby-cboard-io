@@ -20,15 +20,15 @@ export default function BlogPage({ data }) {
         </div>
       </header>
 
-      <section className="download bg-primary text-center" id="blogposts">
+      <section className="blog text-center" id="blogposts">
         {edges.map(({ node }) => (
           <Blog
             key={node.id}
-            cover={node.frontmatter.cover.childImageSharp.fluid}
-            path={node.frontmatter.path}
+            cover={node.frontmatter.image.childImageSharp.fluid}
+            path={node.fields.slug}
             title={node.frontmatter.title}
             date={node.frontmatter.date}
-            tags={node.frontmatter.tags}
+            tags={node.frontmatter.categories}
             excerpt={node.excerpt}
           />
         ))}
@@ -47,8 +47,7 @@ BlogPage.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
-              cover: PropTypes.object.isRequired,
-              path: PropTypes.string.isRequired,
+              image: PropTypes.object.isRequired,
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
               tags: PropTypes.array,
@@ -67,6 +66,9 @@ export const query = graphql`
         node {
           id
           excerpt(pruneLength: 200)
+          fields {
+            slug
+          }
           frontmatter {
             title
             categories

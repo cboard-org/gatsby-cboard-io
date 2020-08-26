@@ -6,7 +6,7 @@ categories:
   - cboard
   - unicef
   - europe
-image: /images/montenegro-post-01.jpg
+image: ../../assets/images/montenegro-post-01.jpg
 author_staff_member: katrina
 slug: 2020-08-10-montenegro-UNICEF-report
 ---
