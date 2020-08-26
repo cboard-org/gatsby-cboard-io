@@ -6,11 +6,6 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
-    {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      // See the theme's README for all available options
-      options: {},
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,10 +36,23 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        gfm: true
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              quality: 90,
+              linkImagesToOriginal: true,
+            },
+          },
+          'gatsby-remark-prismjs',
+        ],
       },
+      gfm: true
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
   ],
 };

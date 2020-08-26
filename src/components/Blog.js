@@ -1,55 +1,118 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import moment from 'moment';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { TagsBlock } from './TagsBlock';
 
-export default class Blog extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { };
-  }
-  render() {
-    const { data } = this.props;
-    return (
-      <div className="blogs-section section" id="Blogs">
-        <div className="container">
-          <ul
-            className={`blogs-list ${data.length < 5 ? 'few-blogs' : ''}`}
-          >
-            {data.map((item, index) => {
-              return (
-                <li key={index} className="item">
-                  <div className="inner">
-                    <Link className="link" to={item.node.slug} />
+const Wrapper = styled.article`
+  margin: 0 3rem;
+`;
 
-                    {item.node.featureImage ? (
-                      <Img
-                        fixed={item.node.image}
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                      />
-                    ) : (
-                        <div className="no-image"></div>
-                      )}
-                    <div className="details">
-                      <h3 className="title">{item.node.title}</h3>
-                      <span className="date">
-                        <i className="fas fa-calendar-alt"></i>{' '}
-                        {moment(item.node.createdAt).format('LL')}
-                      </span>
-                    </div>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-          <div className="see-more">
-            <Link to="/blogs">
-              <span>More Blogs</span>
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
+const Image = styled.div`
+  margin: auto;
+  position: relative;
+  box-shadow: ${props => props.theme.shadow.feature.small.default};
+  transition: ${props => props.theme.transitions.boom.transition};
+  border-radius: ${props => props.theme.borderRadius.default};
+  min-height: 300px;
+  img {
+    border-radius: ${props => props.theme.borderRadius.default};
   }
-}
+  &:hover {
+    box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    transform: scale(1.04);
+  }
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: ${props => props.theme.borderRadius.default};
+    > div {
+      position: static !important;
+    }
+    > div > div {
+      position: static !important;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 5px ${props => props.theme.colors.primary.dark};
+    }
+  }
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 100%;
+  @media (max-width: 800px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    min-height: 200px;
+  }
+`;
+
+const Information = styled.div`
+  h1 {
+    font-size: 2rem;
+    display: inline-block;
+    color: ${props => props.theme.colors.black.base};
+    transition: all ${props => props.theme.transitions.default.duration};
+    &:hover {
+      color: ${props => props.theme.colors.primary.base};
+    }
+  }
+  text-align: center;
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 100%;
+  @media (max-width: 800px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+`;
+
+const Date = styled.div`
+  margin-top: 1rem;
+  color: ${props => props.theme.colors.black.lighter};
+`;
+
+const Title = styled.h1`
+  margin: 0;
+`;
+
+const Blog = ({ path, cover, title, date, excerpt, tags }) => (
+
+  <div className="container">
+    <Wrapper>
+      <Image>
+        <Link to={path} title={title}>
+          <Img fluid={cover} />
+        </Link>
+      </Image>
+      <Information>
+        <Date>{date}</Date>
+        <Link to={path}>
+          <Title>{title}</Title>
+        </Link>
+        <TagsBlock list={tags} />
+        {excerpt}
+      </Information>
+    </Wrapper>
+  </div>
+);
+
+export default Blog;
+
+Blog.propTypes = {
+  cover: PropTypes.object.isRequired,
+  path: PropTypes.string.isRequired,
+  excerpt: PropTypes.string,
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
+};
