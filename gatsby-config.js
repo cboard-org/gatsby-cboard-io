@@ -1,9 +1,10 @@
 const config = require('./config');
+const siteConfig = require('./config/site');
 
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
+    ...siteConfig
   },
   plugins: [
     'gatsby-plugin-react-helmet',
