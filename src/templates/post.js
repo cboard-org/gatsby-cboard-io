@@ -4,15 +4,16 @@ import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BlogpostHeader from '../components/BlogpostHeader';
 import SEO from '../components/SEO';
 
 const Post = ({ data, pageContext }) => {
-  const {html, frontmatter, excerpt } = data.markdownRemark
-  const {date, title, tags, path, description} = frontmatter
+  const { html, frontmatter, excerpt } = data.markdownRemark
+  const { date, title, tags, path, description } = frontmatter
   const image = frontmatter.image.childImageSharp.fluid;
   return (
     <Layout>
-      <Header/>
+      <Header />
       <SEO
         title={title}
         description={description || excerpt || ' '}
@@ -20,7 +21,8 @@ const Post = ({ data, pageContext }) => {
         pathname={path}
         article
       />
-      <Footer/>
+      <BlogpostHeader title={title} date={date} cover={image} />
+      <Footer />
     </Layout>
   );
 };

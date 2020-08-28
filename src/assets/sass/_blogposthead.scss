@@ -1,0 +1,28 @@
+// Styling for the bloghead
+header.blogposthead {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  background: #9511bd;
+  background-attachment: fixed;
+  background-color: #272833;
+  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.2), rgba(195, 55, 100, 0.2));
+  background: linear-gradient(rgba(49, 49, 49, 0.5), rgba(70, 70, 70, 0.5));
+  background-position: center center;
+  background-size: cover;
+  max-height: 50px;
+  overflow: hidden;
+  @media (min-width: 992px) {
+    height: 50rem;
+    padding-top: 0px;
+    min-height: 550px;
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
