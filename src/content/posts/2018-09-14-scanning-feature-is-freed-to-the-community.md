@@ -21,7 +21,7 @@ React-scannable is a npm package built on the top of React and JavaScript. Devel
 ## What does react-scannable do?
 Once a scanner is active, it iterates over those elements that have been identified as scannable and lets them execute actions when they get focused on the screen.
 
-![react-scannable in action](/images/scanning.gif)
+![react-scannable in action](../../assets/images/scanning.gif)
 
 The objective is to extend the relationship between the user and the application, allowing another way of interaction.
 
@@ -38,7 +38,7 @@ Cboard uses react-scannable to implement scanner feature just to scan the entire
 
 Users that use a switch to interact with applications can communicate as any other user does.
 
-![switch](/images/switch.jpg)
+![switch](../../assets/images/switch.jpg)
 
 This is very important because it allows handicapped people to interact with the board as usual.
 

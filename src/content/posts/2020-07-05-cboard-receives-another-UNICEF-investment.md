@@ -10,7 +10,7 @@ author_staff_member: katrina
 ---
 Cboard is very please to announce another investment from UNICEF to continue developing the application. Cboard is a free online web app aiding communication through text-to-speech, created through Cireha rehabilitation center in Córdoba, Argentina. With support from UNICEF, we were able to conduct initial user testing in Buenos Aires, Argentina, prior to the official launch in September 2018. During this testing were were able to get feedback from users and professional speech therapist to edit the app and make it more accessible for users. 
 
-![CIREHA-Center](/images/cireha12.jpg)
+![CIREHA-Center](../../assets/images/cireha12.jpg)
 
 On June 19 UNICEF announced eight technology companies in developing and emerging economies would be receiving an investment from the UNICEF Cryptocurrent Fund (CryptoFund). Those receiving investments had all previously received up to $100,000 from UNICEF’s Innovation Fund to create or continue developing open-source technology. 
 

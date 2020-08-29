@@ -10,7 +10,7 @@ author_staff_member: katrina
 ---
 For the final two weeks of testing, we continued seeing patients from both Ciren and Eipan, but though we saw a few new patients, the majority of the visits were second sessions with previously seen patients. This was helpful in that the children were not as overwhelmed with new images, and were seeing Cboard for a second time (at least). We had created folders with few pictograms (so less visual stimulation) in order to determine whether their reactions and understanding changed from the initial visit. 
 
-![Eipan](/images/eipam2.jpg) 
+![Eipan](../../assets/images/eipam2.jpg) 
 
 ## User testing – weeks 3 and 4
 
@@ -20,7 +20,7 @@ We saw the 4 year old patient with neurodevelopmental delay mentioned in the fir
 
 The other patients were saw also had an easier time with the edited folders, but had some of the same issues previously mentioned regarding the size of pictograms, and the placement of the back button as well as going back to the home page without pressing the ‘back’ button so many times. The second sessions with patients pointed out that practice made Cboard easier to use, but that adding the option to enlarge both the pictograms and navigation options will be necessary to continue developing the application.
 
-![Eipan2](/images/eipan3.jpeg) 
+![Eipan2](../../assets/images/eipan3.jpeg) 
 
 ## Overall feedback and last thoughts
 

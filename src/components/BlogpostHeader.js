@@ -7,7 +7,7 @@ const BlogpostHeader = ({ children, title, description, date, cover }) => (
     <Img fluid={cover || {} || [] || ''} />
         <div className="text">
           <h2 className="mb-2">{title}</h2>
-          <p>{description}</p>
+          <h3>{description}</h3>
           <p>{date}</p>
         </div>
   </header>

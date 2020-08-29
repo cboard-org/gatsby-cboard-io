@@ -11,7 +11,7 @@ author_staff_member: martin
 ---
 We are proud to say we have complete the process that finishes our 15 months of investment with the Unicef innovation fund.
 
-![UNICEF-Innovation_Primary-Logo](/images/UNICEF-Innovation_Primary-Logo.png)
+![UNICEF-Innovation_Primary-Logo](../../assets/images/UNICEF-Innovation_Primary-Logo.png)
 
 ## Biggest key achievements 
 Over the past 15 months, our team was able to run three iterations of development and field testing of a cloud-based application that can help users to communicate.
@@ -24,7 +24,7 @@ We still have to build a strong and stable team, and we are putting a lot of eff
 
 At the same time, we are working to consolidate a marketing strategy in order to reach markets from different countries, especially on those where current solutions are not available. 
 
-![Cboard Team working with Jellow communicator team ](/images/aacgathering3.jpg)
+![Cboard Team working with Jellow communicator team ](../../assets/images/aacgathering3.jpg)
 
 ## Prototyping
 The app started being developed in React JS as a simple UI application without having login or cloud capability. We emailed developers asking for help with the project, responses were nice! Some gave tips, some tweeted.
@@ -41,7 +41,7 @@ All team members know each other because they joined the open source community a
 
 Quickly after the GitHub project was created, people who have different ideas and background started to contribute in different areas of expertise. Programmers, designers, translators and even patients and parents were able to find a place to collaborate and open source was the key.
 
-![Team working with Unicef innovation fund](/images/aacgathering2.jpg)
+![Team working with Unicef innovation fund](../../assets/images/aacgathering2.jpg)
 
 Although open source is the main reason for Cboard to exist, it supposed some challenges to face. The lack of a stable team that is committed to the project goals is a pain point in every aspect of the project. We tried to mitigate it by hiring a software development company and we got good results, but it was difficult to get added value when we wanted to develop features that are open to suggestions and improvements.
 

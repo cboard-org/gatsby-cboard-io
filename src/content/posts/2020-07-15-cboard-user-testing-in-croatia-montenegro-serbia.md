@@ -15,7 +15,7 @@ According to those conducting the testing, Cboard promotes interaction, helps ov
 
 In the region where the testing is being conducted, it is estimated that *12,000 children between the ages of 0 to 6 are in need of AAC*, while another 840,000 could benefit. Cboard is free and open-source technology seeking to provide AAC to all those in need.
 
-![Unicef ECARO pilot](/images/ecaro-pilot-1.jpg)
+![Unicef ECARO pilot](../../assets/images/ecaro-pilot-1.jpg)
 *Professional supporting a child to use Cboard, Preschool Institution Zvezdara, Belgrade, 2019 / by Milana Jelovac*
 
 ## User testing plan
@@ -41,7 +41,7 @@ Professionals involved in the testing reported that children seemed to respond p
 
 > “Our child uttered a three-word sentence several times when requesting a desired item, until recently she used the isolated word occasionally”.
 
-![Unicef ECARO pilot](/images/ecaro-pilot-2.png)
+![Unicef ECARO pilot](../../assets/images/ecaro-pilot-2.png)
 *AAC Training for professionals, Zagreb, Croatia, October 2019*
 
 Natasa Sreckovic Milenkovic, a speech therapist for Srna, 3 year old girl in Belgrade, Serbia, observed the following:
@@ -53,7 +53,7 @@ In order to measure in the impact of Cboard, the **PIADS** (Psychosocial Impact 
 
 Initial results from PIADS test points show a positive tren, with progress in all three domains. In practice, this means that ‘frustrations are now less expressed and they are now a calmer and happier child. Cboard makes out lives easier and enables the child to communicate’, as observed by a pre-school teacher in CVIT Mediterana, Split, Croatia.
 
-![Unicef ECARO pilot](/images/ecaro-pilot-3.png)
+![Unicef ECARO pilot](../../assets/images/ecaro-pilot-3.png)
 *A child using Cboard, Preschool Institution Zvezdara, Belgrade, 2019 / by Milana Jelovac*
 
 ## Next Step

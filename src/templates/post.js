@@ -23,9 +23,9 @@ const Post = ({ data, pageContext }) => {
         article
       />
       <BlogpostHeader title={title} description={description} date={date} cover={image} />
-      <div className="container">
+      <section className="container">
         <BlogPostContent input={html} />
-      </div>
+      </section>
       <Footer />
     </Layout>
   );
@@ -46,7 +46,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date
+        date(formatString: "MM.DD.YYYY")
         title
         description
         categories

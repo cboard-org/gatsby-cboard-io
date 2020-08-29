@@ -16,7 +16,7 @@ On July 30th, the Montenegro UNICEF regional office published a [report document
 
 > CETINJE, 1 JULY 2020 – Before the coronavirus outbreak, Bojana would regularly go to "Zagorka Ivanović" kindergarten in Cetinje, as well as to the Resource Centre in Podgorica. During the COVID-19 pandemic, that was no longer possible. That is when the C-Board application became an indispensable part of the daily life of this family.
 
-![Bojana and her mum Vjera](/images/montenegro-post-02.jpg)
+![Bojana and her mum Vjera](../../assets/images/montenegro-post-02.jpg)
 *Bojana and her mum Vjera using Cboard application in Cetinje, in July 2020. UNICEF Montenegro / Duško Miljanić / 2020*
 
 Bojana’s mother, Vjera, was interviewed and asked about their experience with the app, to which she answered: 
@@ -28,7 +28,7 @@ Vjera then explained what concrete progress Bojana has made while using Cboard:
 
 > *Bojana is now able to pronounce words more easily and makes her requests with understanding. With the help of the tablet, she learned to ask for soap, toilet paper, or a towel when she goes to the bathroom. The application helped us a lot because it facilitates much better communication. At the same time,  the bonds between the members of the whole family appear to be stronger.*
 
-![Bojana and her sister Marija](/images/montenegro-post-03.jpg)
+![Bojana and her sister Marija](../../assets/images/montenegro-post-03.jpg)
 *Bojana and her sister Marija using Cboard application in Cetinje, in July 2020. UNICEF Montenegro / Duško Miljanić / 2020*
 
 > Thanks to this initiative, digital technology has been used to achieve the noblest goal, which is to support children in reaching their full potential.
