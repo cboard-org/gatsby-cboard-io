@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BlogpostHeader from '../components/BlogpostHeader';
 import SEO from '../components/SEO';
+import BlogPostContent from '../layouts/BlogPostContent';
 
 const Post = ({ data, pageContext }) => {
   const { html, frontmatter, excerpt } = data.markdownRemark
@@ -21,7 +22,10 @@ const Post = ({ data, pageContext }) => {
         pathname={path}
         article
       />
-      <BlogpostHeader title={title} date={date} cover={image} />
+      <BlogpostHeader title={title} description={description} date={date} cover={image} />
+      <div className="container">
+        <BlogPostContent input={html} />
+      </div>
       <Footer />
     </Layout>
   );
@@ -44,13 +48,14 @@ export const query = graphql`
       frontmatter {
         date
         title
+        description
         categories
         image {
           childImageSharp {
             fluid(
               maxWidth: 1920
               quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
+              duotone: { highlight: "#272833", shadow: "#272833", opacity: 50 }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }

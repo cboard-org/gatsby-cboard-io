@@ -2,11 +2,12 @@ import React from 'react';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
-const BlogpostHeader = ({ children, title, date, cover }) => (
+const BlogpostHeader = ({ children, title, description, date, cover }) => (
   <header className="blogposthead">
     <Img fluid={cover || {} || [] || ''} />
-        <div className="container">
+        <div className="text">
           <h2 className="mb-2">{title}</h2>
+          <p>{description}</p>
           <p>{date}</p>
         </div>
   </header>
@@ -23,6 +24,11 @@ BlogpostHeader.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
+  description: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.bool,
+  ]),
 };
 
 BlogpostHeader.defaultProps = {
@@ -30,4 +36,5 @@ BlogpostHeader.defaultProps = {
   cover: false,
   date: false,
   title: false,
+  description: false,
 };
