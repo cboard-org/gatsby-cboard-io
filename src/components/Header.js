@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Scroll from './Scroll';
+import { Link } from 'gatsby';
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -40,14 +41,14 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container">
-          <a className="navbar-brand" href="#page-top">
+          <Link className="navbar-brand" to="/#page-top/">
             {config.siteTitle}
-          </a>
+          </Link>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
               openMenu ? '' : 'collapsed'
-            }`}
+              }`}
             type="button"
             aria-controls="navbarResponsive"
             aria-expanded={openMenu}
@@ -63,48 +64,24 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="download"
-                >
-                  <a className="nav-link" href="/blog">
-                    Blog
-                  </a>
-                </Scroll>
+                <Link className="nav-link" to="/blog/">
+                  Blog
+                  </Link>
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="whatis"
-                >
-                  <a className="nav-link" href="#whatis">
-                    Help and Support 
-                  </a>
-                </Scroll>
+                <Link className="nav-link" to="/help/">
+                  Help and Support
+                  </Link>
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="features"
-                >
-                  <a className="nav-link" href="#features">
-                    About
-                  </a>
-                </Scroll>
+                <Link className="nav-link" to="/about/">
+                  About
+                  </Link>
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="contact"
-                >
-                  <a className="nav-link" href="#contact">
-                    Donate
-                  </a>
-                </Scroll>
+                <Link className="nav-link" to="/donate/">
+                  Donate
+                  </Link>
               </li>
             </ul>
           </div>
