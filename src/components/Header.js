@@ -66,11 +66,14 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
+                <a>
                 <NavDropdown
+                className="nav-link"
                   title="Discover"
                 >
                   <HomeScroller />
                 </NavDropdown>
+                </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/blog/">
