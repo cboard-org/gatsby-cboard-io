@@ -36,76 +36,64 @@ export default class HomeScroller extends Component {
   render() {
     const { openMenu, visibilityClass } = this.state;
     return (
-      <nav
-        className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
-        id="homeNav"
-      >
-        <div className="container">
-
-          <div
-            className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
-            id="navbarResponsive"
+      <ul 
+      id="homeNav" className="navbar-nav">
+        <li className="nav-item">
+          <Scroll
+            onClick={_ => this.toggleMenu(!openMenu)}
+            type="id"
+            element="download"
           >
-            <ul className="navbar-nav ml-auto mt-5">
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="download"
-                >
-                  <a className="nav-link" href="#download">
-                    Download
+            <a className="nav-link" href="#download">
+              Download
                   </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="whatis"
-                >
-                  <a className="nav-link" href="#whatis">
-                    What is
+          </Scroll>
+        </li>
+        <li className="nav-item">
+          <Scroll
+            onClick={_ => this.toggleMenu(!openMenu)}
+            type="id"
+            element="whatis"
+          >
+            <a className="nav-link" href="#whatis">
+              What is
                   </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="features"
-                >
-                  <a className="nav-link" href="#features">
-                    Features
+          </Scroll>
+        </li>
+        <li className="nav-item">
+          <Scroll
+            onClick={_ => this.toggleMenu(!openMenu)}
+            type="id"
+            element="features"
+          >
+            <a className="nav-link" href="#features">
+              Features
                   </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="contact"
-                >
-                  <a className="nav-link" href="#contact">
-                    Contact
+          </Scroll>
+        </li>
+        <li className="nav-item">
+          <Scroll
+            onClick={_ => this.toggleMenu(!openMenu)}
+            type="id"
+            element="contact"
+          >
+            <a className="nav-link" href="#contact">
+              Contact
                   </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="joinus"
-                >
-                  <a className="nav-link" href="#joinus">
-                    Join Us
+          </Scroll>
+        </li>
+        <li className="nav-item">
+          <Scroll
+            onClick={_ => this.toggleMenu(!openMenu)}
+            type="id"
+            element="joinus"
+          >
+            <a className="nav-link" href="#joinus">
+              Join Us
                   </a>
-                </Scroll>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+          </Scroll>
+        </li>
+      </ul>
     );
   }
 }

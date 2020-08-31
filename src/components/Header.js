@@ -68,10 +68,9 @@ export default class Header extends Component {
               <li className="nav-item">
                 <NavDropdown
                   title="Discover"
-                  id="discover-dropdown"
-                  className="discover-selector"
-                ><HomeScroller />
-                  </NavDropdown>
+                >
+                  <HomeScroller />
+                </NavDropdown>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/blog/">
