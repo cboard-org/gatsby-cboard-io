@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Scroll from './Scroll';
+import { NavDropdown } from "react-bootstrap";
 export default class HomeScroller extends Component {
   constructor(props) {
     super(props);
@@ -36,8 +37,8 @@ export default class HomeScroller extends Component {
     const { openMenu, visibilityClass } = this.state;
     return (
       <nav
-        className={`navbar navbar-expand-lg navbar-light`}
-        id="mainNav"
+        className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
+        id="homeNav"
       >
         <div className="container">
 
@@ -64,7 +65,7 @@ export default class HomeScroller extends Component {
                   element="whatis"
                 >
                   <a className="nav-link" href="#whatis">
-                    What is 
+                    What is
                   </a>
                 </Scroll>
               </li>

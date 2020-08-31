@@ -76,3 +76,41 @@
         }
     }
 }
+// Styling for the navbar
+#homeNav {
+    border-color: fade-out($gray-darker, .95);
+    @include transition-all;
+    @include heading-font;
+    .navbar-toggler {
+        font-size: 12px;
+        padding: 8px 10px;
+        color: $gray-darker;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        > li {
+            > a {
+                font-size: 11px;
+                @include alt-font;
+                &.active {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            > a,
+            > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}

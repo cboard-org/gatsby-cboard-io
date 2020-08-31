@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import config from '../../config';
 import Scroll from './Scroll';
 import { Link } from 'gatsby';
+import { NavDropdown } from "react-bootstrap";
+import HomeScroller from './HomeScroller';
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -63,6 +65,14 @@ export default class Header extends Component {
             id="navbarResponsive"
           >
             <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <NavDropdown
+                  title="Discover"
+                  id="discover-dropdown"
+                  className="discover-selector"
+                ><HomeScroller />
+                  </NavDropdown>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/blog/">
                   Blog
