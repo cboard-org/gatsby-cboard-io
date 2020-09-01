@@ -56,7 +56,6 @@ export default class Header extends Component {
             aria-expanded={openMenu}
             aria-label="Toggle navigation"
           >
-            Menu
             <i className="fas fa-bars"></i>
           </button>
 
@@ -67,12 +66,12 @@ export default class Header extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a>
-                <NavDropdown
-                className="nav-link"
-                  title="Discover"
-                >
-                  <HomeScroller />
-                </NavDropdown>
+                  <NavDropdown
+                    className="nav-link nav-dropdown"
+                    title="Discover"
+                  >
+                    <HomeScroller />
+                  </NavDropdown>
                 </a>
               </li>
               <li className="nav-item">
