@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
@@ -10,7 +10,7 @@ import BlogPostContent from '../layouts/BlogPostContent';
 
 const Post = ({ data, pageContext }) => {
   const { html, frontmatter, excerpt } = data.markdownRemark
-  const { date, title, tags, path, description } = frontmatter
+  const { date, title, path, description } = frontmatter
   const image = frontmatter.image.childImageSharp.fluid;
   return (
     <Layout>

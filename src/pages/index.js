@@ -12,7 +12,6 @@ import demo1 from '../assets/images/cant-speak-iphone-english.png';
 import demo2 from '../assets/images/home-board-ipad-hebrew.png';
 import gplay from '../assets/images/google-play-badge.svg';
 import Contact from '../components/Contact';
-import HomeScroller from '../components/HomeScroller';
 
 const IndexPage = () => (
   <Layout>
@@ -20,28 +19,28 @@ const IndexPage = () => (
     <header className="masthead">
       <div className="container h-100">
         <div className="row h-100">
-          <div className="col-lg-6 my-5">
-            <CboardLogo />
-            <h2 className="mb-5">
-              AAC web app for children and adults with speech and language
-              impairments, aiding communication with symbols and
-              text-to-speech.
-              </h2>
-            <div className="d-flex justify-content-around">
-              <div className="mx-1">
-                <a
-                  href="https://app.cboard.io/"
-                  className="btn btn-outline btn-xl"
-                >
-                  Start Cboard
+          <div className="col-lg-7 my-auto">
+            <div className="header-content mx-auto">
+              <CboardLogo />
+              <h1 className="mb-5">
+                Communication for Everyone
+              </h1>
+              <div className="d-flex justify-content-around">
+                <div className="mx-1">
+                  <a
+                    href="https://app.cboard.io/"
+                    className="btn btn-outline btn-xl"
+                  >
+                    Start Cboard
               </a>
-              </div>
-              <div className="mx-1">
-                <Scroll type="id" element="download">
-                  <a href="#download" className="btn btn-outline btn-xl">
-                    Download
+                </div>
+                <div className="mx-1">
+                  <Scroll type="id" element="download">
+                    <a href="#download" className="btn btn-outline btn-xl">
+                      Download
                 </a>
-                </Scroll>
+                  </Scroll>
+                </div>
               </div>
             </div>
           </div>

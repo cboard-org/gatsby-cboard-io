@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import config from '../../config';
 import Scroll from './Scroll';
-import { NavDropdown } from "react-bootstrap";
+
 export default class HomeScroller extends Component {
   constructor(props) {
     super(props);
