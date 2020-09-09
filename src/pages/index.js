@@ -75,8 +75,8 @@ const IndexPage = () => (
     <section className="whatis bg-tertiary" id="whatis">
       <div className="container">
         <div className="row">
-          <div className="col-md-8 mx-auto">
-            <YouTube videoId="pW1hRkibfps" />
+          <div className="mx-3 w-100">
+            <YouTube videoId="pW1hRkibfps" className="youtube-video" />
           </div>
         </div>
       </div>
