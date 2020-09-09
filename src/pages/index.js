@@ -19,11 +19,11 @@ const IndexPage = () => (
     <header className="masthead">
       <div className="container h-100">
         <div className="row h-100">
-          <div className="col-lg-7 my-auto">
+          <div className="col-lg-6 my-auto">
             <div className="header-content mx-auto">
               <CboardLogo />
               <h1 className="mb-2">
-                Communication for <b>Everyone</b>
+                Communication<br />for <b>Everyone</b>
               </h1>
               <div className="ctas">
                 <div className="p-3">
@@ -188,9 +188,11 @@ const IndexPage = () => (
         <h2>Get in touch today
         </h2>
         <Social />
-        <p>If you have any questions or queries send us a message
+        <div className="pt-4">
+          <p>If you have any questions or queries send us a message
            and we'll get back to you as soon as we can.</p>
-        <Contact />
+          <Contact />
+        </div>
       </div>
     </section>
 

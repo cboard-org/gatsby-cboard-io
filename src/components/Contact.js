@@ -5,48 +5,55 @@ const Contact = () => {
     <div id="contact">
       <div className="container position-relative">
         <form name="contact" netlify>
-          <div className="h-100 my-3">
-            <input
-              type="text"
-              name="name"
-              aria-label="Name"
-              required
-              autoComplete="off"
-            />
-            <label className="mx-3" for="name">
-              <span className="content-name">Name</span>
+          <div className="field">
+            <label className="label" for="name">
+              Name
             </label>
+            <div className="control">
+              <input
+                className="input"
+                type="text"
+                name="name"
+                aria-label="Name"
+                required
+                autoComplete="on"
+              />
+            </div>
           </div>
-
-          <div className="my-3 position-relative">
-            <input
-              type="email"
-              name="email"
-              aria-label="Email"
-              required
-              autoComplete="off"
-            />
-            <label className="mx-3" for="email">
-              <span className="content-name">Email</span>
+          <div className="field">
+            <label className="label" for="name">
+              Email
             </label>
+            <div className="control">
+              <input
+                className="input"
+                type="email"
+                name="email"
+                aria-label="Email"
+                required
+                autoComplete="on"
+              />
+            </div>
           </div>
-
-          <div className="my-3 position-relative">
-            <textarea
-              type="text"
-              name="message"
-              rows="5"
-              required
-              autoComplete="off"
-              aria-label="Message"
-            />
-            <label className="mx-3" for="message">
-              <span className="content-name">Message</span>
+          <div className="field">
+            <label className="label" for="message">
+              Message
             </label>
+            <div className="control">
+              <textarea
+                type="text"
+                name="message"
+                rows="5"
+                required
+                aria-label="Message"
+                className="textarea"
+                autoComplete="on"
+              />
+            </div>
           </div>
           <div className="btn btn-outline btn-xl">
-            <a  cta="Send" type="submit" >
-            Send Contact
+            <a cta="Send" type="submit" >
+              Send Contact
             </a>
           </div>
         </form>

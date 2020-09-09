@@ -13,36 +13,56 @@ section.contact {
     margin-bottom: 0;
     li {
       a {
+        color: whitesmoke;
         font-size: 40px;
         line-height: 80px;
         display: block;
         width: 80px;
         height: 80px;
         border-radius: 100%;
-      }
-      &.social-twitter {
-        a {
-          background-color: $brand-twitter;
+        .fa-twitter {
           &:hover {
-            background-color: darken($brand-twitter, 5%);
+            color: darken($brand-twitter, 5%);
+          }
+        }
+        .fa-facebook-f {
+          &:hover {
+            color: darken($brand-facebook, 5%);
+          }
+        }
+        .fa-linkedin-in {
+          &:hover {
+            color: darken($brand-facebook, 5%);
+          }
+        }
+        .fa-instagram {
+          &:hover {
+            color: darken($brand-instagram, 5%);
+          }
+        }
+        .fa-github {
+          &:hover {
+            color: darken(black, 5%);
           }
         }
       }
-      &.social-facebook {
-        a {
-          background-color: $brand-facebook;
-          &:hover {
-            background-color: darken($brand-facebook, 5%);
-          }
-        }
-      }
-      &.social-google-plus {
-        a {
-          background-color: $brand-google-plus;
-          &:hover {
-            background-color: darken($brand-google-plus, 5%);
-          }
-        }
+    }
+  }
+  .field:not(:last-child) {
+    margin-bottom: 0.75rem;
+    .label:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+    .control {
+      box-sizing: border-box;
+      clear: both;
+      position: relative;
+      text-align: inherit;
+      .input,
+      .textarea {
+        box-shadow: inset 0 0.0625em 0.125em rgba(43, 37, 35, 0.05);
+        max-width: 75%;
+        width: 100%;
       }
     }
   }
