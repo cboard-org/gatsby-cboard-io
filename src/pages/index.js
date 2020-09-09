@@ -22,11 +22,11 @@ const IndexPage = () => (
           <div className="col-lg-7 my-auto">
             <div className="header-content mx-auto">
               <CboardLogo />
-              <h1 className="mb-5">
-                Communication for Everyone
+              <h1 className="mb-2">
+                Communication for <b>Everyone</b>
               </h1>
-              <div className="d-flex justify-content-around">
-                <div className="mx-1">
+              <div className="ctas">
+                <div className="p-3">
                   <a
                     href="https://app.cboard.io/"
                     className="btn btn-outline btn-xl"
@@ -34,7 +34,7 @@ const IndexPage = () => (
                     Start Cboard
               </a>
                 </div>
-                <div className="mx-1">
+                <div className="p-3">
                   <Scroll type="id" element="download">
                     <a href="#download" className="btn btn-outline btn-xl">
                       Download
@@ -85,7 +85,7 @@ const IndexPage = () => (
     <section className="features" id="features">
       <div className="container">
         <div className="section-heading text-center">
-          <h2>Open Source, +40 languages, Modern UI, Runs on Browsers. Unlimited possibilities.</h2>
+          <h2>Open Source, +40 languages, Modern UI, Runs on Browsers and Android app.</h2>
           <p className="text-muted">
             Check out what you can do with Cboard in the open!
           </p>

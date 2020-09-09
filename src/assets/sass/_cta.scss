@@ -2,6 +2,7 @@
 section.cta {
   position: relative;
   padding: 250px 0;
+  color: whitesmoke;
   background-image: url('../images/montenegro02.jpg');
   background-position: center;
   @include background-cover;
@@ -13,7 +14,6 @@ section.cta {
       max-width: 450px;
       margin-top: 0;
       margin-bottom: 25px;
-      color: white;
     }
     @media (min-width: 768px) {
       h2 {
