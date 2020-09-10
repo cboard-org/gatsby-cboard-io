@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import config from '../../config';
-import Scroll from './Scroll';
 import { Link } from 'gatsby';
 import { NavDropdown } from "react-bootstrap";
 import HomeScroller from './HomeScroller';
-export default class Header extends Component {
+
+class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,6 +13,10 @@ export default class Header extends Component {
       visibilityClass: '',
     };
   }
+  static defaultProps = {
+    isHome: false
+  }
+
   toggleMenu = value => {
     this.setState({ openMenu: value });
   };
@@ -36,6 +41,7 @@ export default class Header extends Component {
   }
 
   render() {
+    const { isHome } = this.props;
     const { openMenu, visibilityClass } = this.state;
     return (
       <nav
@@ -64,16 +70,17 @@ export default class Header extends Component {
             id="navbarResponsive"
           >
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a>
-                  <NavDropdown
-                    className="nav-link nav-dropdown"
-                    title="Discover"
-                  >
-                    <HomeScroller />
-                  </NavDropdown>
-                </a>
-              </li>
+              {isHome && (
+                <li className="nav-item">
+                  <a>
+                    <NavDropdown
+                      className="nav-link nav-dropdown"
+                      title="Discover"
+                    >
+                      <HomeScroller />
+                    </NavDropdown>
+                  </a>
+                </li>)}
               <li className="nav-item">
                 <Link className="nav-link" to="/blog/">
                   Blog
@@ -101,3 +108,9 @@ export default class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  isHome: PropTypes.bool
+}
+
+export default Header; 

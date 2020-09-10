@@ -2,8 +2,8 @@
 header.bloghead {
   position: relative;
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 120px;
   color: white;
   background: #9511bd;
   background-attachment: fixed;
@@ -12,7 +12,7 @@ header.bloghead {
   background: linear-gradient(rgba(49, 49, 49, 0.5), rgba(70, 70, 70, 0.5)), url('../images/cireha-children-07.jpg');
   background-position: center center;
   background-size: cover;
-  max-height: 50px;
+  max-height: 200px;
   @media (min-width: 992px) {
     height: 50vh;
     min-height: 250px;

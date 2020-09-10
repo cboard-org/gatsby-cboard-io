@@ -15,7 +15,7 @@ const Blog = ({ path, cover, title, date, excerpt, tags }) => {
           </Link>
         </div>
         <div>
-          <div className="mt-1">{date}</div>
+          <div className="mt-3 mb-1">{date}</div>
           <Link to={path}>
             <h3 className="mb-2">{title}</h3>
           </Link>

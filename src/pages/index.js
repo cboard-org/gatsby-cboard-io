@@ -15,7 +15,7 @@ import Contact from '../components/Contact';
 
 const IndexPage = () => (
   <Layout>
-    <Header />
+    <Header isHome={true} />
     <header className="masthead">
       <div className="container h-100">
         <div className="row h-100">

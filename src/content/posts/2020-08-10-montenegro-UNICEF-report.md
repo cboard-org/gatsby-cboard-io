@@ -32,7 +32,7 @@ Vjera then explained what concrete progress Bojana has made while using Cboard:
 *Bojana and her sister Marija using Cboard application in Cetinje, in July 2020. UNICEF Montenegro / Duško Miljanić / 2020*
 
 > Thanks to this initiative, digital technology has been used to achieve the noblest goal, which is to support children in reaching their full potential.
-> *Maja Kovačević, UNICEF Montenegro Education Officer*
+*Maja Kovačević, UNICEF Montenegro Education Officer*
 
 
 A special **thank you** to everyone who has helped with this initiative at UNICEF and particularly at the Montenegro regional office. 
