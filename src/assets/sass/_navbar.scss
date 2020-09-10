@@ -82,29 +82,32 @@
         }
       }
     }
-    #homeNav {
-      border-color: fade-out($gray-darker, 0.95);
-      @include transition-all;
-      @include heading-font;
-      flex-direction: column;
-      > li {
-        > a {
-          font-size: 11px;
-          @include alt-font;
-          &.active {
-            color: $gray-darker !important;
+  }
+
+  #homeNav {
+    border-color: fade-out($gray-darker, 0.95);
+    @include transition-all;
+    @include heading-font;
+    flex-direction: column;
+    > li {
+      > a {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 11px;
+        @include alt-font;
+        &.active {
+          color: $gray-darker !important;
+          background-color: transparent;
+          &:hover {
             background-color: transparent;
-            &:hover {
-              background-color: transparent;
-            }
           }
         }
-        > a,
-        > a:focus {
-          color: $gray-darker;
-          &:hover {
-            color: $theme-primary;
-          }
+      }
+      > a,
+      > a:focus {
+        color: $gray-darker;
+        &:hover {
+          color: $theme-primary;
         }
       }
     }
