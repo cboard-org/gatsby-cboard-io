@@ -1,0 +1,26 @@
+// Styling for the bloghead
+header.helphead {
+  position: relative;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 120px;
+  color: white;
+  background: #9511bd;
+  background-attachment: fixed;
+  background-color: #272833;
+  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.2), rgba(195, 55, 100, 0.2)), url('../images/cireha-children-04.jpg');
+  background: linear-gradient(rgba(49, 49, 49, 0.5), rgba(70, 70, 70, 0.5)), url('../images/cireha-children-04.jpg');
+  background-position: center center;
+  background-size: cover;
+  max-height: 200px;
+  @media (min-width: 992px) {
+    height: 50vh;
+    min-height: 250px;
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
