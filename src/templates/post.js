@@ -11,7 +11,7 @@ import BlogPostContent from '../layouts/BlogPostContent';
 const Post = ({ data, pageContext }) => {
   const { html, frontmatter, excerpt } = data.markdownRemark
   const { date, title, path, description } = frontmatter
-  const image = frontmatter.image.childImageSharp.fluid;
+  const image = frontmatter.image ? frontmatter.image.childImageSharp.fluid : undefined;
   return (
     <Layout>
       <Header />
