@@ -56,3 +56,23 @@ header.masthead {
     }
   }
 }
+.staff-members{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.staff-member{
+  margin: 2rem;
+  width: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .staff-member-name{
+    margin-top: 0.7rem;
+  }
+  .picture {
+    max-width: 300px;
+  }
+}

@@ -12,7 +12,8 @@ header.abouthead {
   background: linear-gradient(rgba(29, 38, 113, 0.2), rgba(195, 55, 100, 0.2)), url('../images/montenegro02.jpg');
   background-position: center center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
+  overflow: hidden;
   .header-content {
     max-width: 500px;
     margin-bottom: 100px;
@@ -38,8 +39,7 @@ header.abouthead {
     }
   }
   @media (min-width: 992px) {
-    height: 100vh;
-    min-height: 775px;
+    height: 90vh;
     padding-top: 0;
     padding-bottom: 0;
     .header-content {

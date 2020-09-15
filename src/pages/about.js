@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
+import Gallery from '@browniebroke/gatsby-image-gallery'
+import '@browniebroke/gatsby-image-gallery/dist/style.css'
 import Layout from '../components/Layout';
 import StaffMember from '../components/StaffMember';
 import Header from '../components/Header';
@@ -10,6 +13,8 @@ import SEO from '../components/SEO';
 
 export default function About({ data }) {
   const { edges } = data.allMarkdownRemark;
+  const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
+  console.log(data);
   return (
     <Layout>
       <Header />
@@ -39,13 +44,15 @@ export default function About({ data }) {
         </div>
       </header>
 
-      <section className="team" id="team">
+      <section className="about" id="about">
+        <Gallery images={images} />
         <div className="container">
-          <div className="section-heading text-center">
+          <div className="mt-5 section-heading text-center">
             <h2>Meet the team.</h2>
             <hr />
           </div>
         </div>
+        <div className="staff-members  text-center mx-3">
         {edges.map(({ node }) => (
           <StaffMember
             key={node.id}
@@ -55,6 +62,7 @@ export default function About({ data }) {
             twitter_username={node.frontmatter.twitter_username}
           />
         ))}
+        </div>
       </section >
 
       <Footer />
@@ -78,14 +86,27 @@ export const query = graphql`
             twitter_username
             image {
               childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                fluid(maxWidth: 300, maxHeight: 300) {
+                  ...GatsbyImageSharpFluid
                 }
               }
+            }
+          }
+        }
+      }
+    }
+    allFile(filter: {
+      extension: {regex: "/(jpg)|(jpeg)|(png)/"},
+      relativePath: {regex: "/about/"}}) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            thumb: fluid(maxWidth: 300, maxHeight: 300) {
+              ...GatsbyImageSharpFluid
+            }
+            full: fluid(maxWidth: 1024) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
