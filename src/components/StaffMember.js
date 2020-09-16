@@ -12,7 +12,7 @@ const styles = {
 const StaffMember = ({
   name,
   position,
-  twitter_username,
+  social,
   image }) => {
   return (
     <div className="">
@@ -20,10 +20,22 @@ const StaffMember = ({
         <div className="picture">
           <Img style={styles} fluid={image} />
         </div>
-        <div className="staff-member-name">
+        <div className="staff-member-info">
           <h3>{name}</h3>
           <p className="staff-member-position">{position}</p>
         </div>
+        <ul className="list-inline m-0 list-social">
+          {social.map(socialNetwork => {
+            const { icon, url } = socialNetwork;
+            return (
+              <li key={url} className="list-inline-item h5">
+                <a href={url} target="_blank" rel="noreferrer noopener">
+                  <i className={`fab  ${icon}`}></i>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

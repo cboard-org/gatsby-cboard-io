@@ -53,15 +53,15 @@ export default function About({ data }) {
           </div>
         </div>
         <div className="staff-members  text-center mx-3">
-        {edges.map(({ node }) => (
-          <StaffMember
-            key={node.id}
-            image={node.frontmatter.image.childImageSharp.fluid}
-            name={node.frontmatter.name}
-            position={node.frontmatter.position}
-            twitter_username={node.frontmatter.twitter_username}
-          />
-        ))}
+          {edges.map(({ node }) => (
+            <StaffMember
+              key={node.id}
+              image={node.frontmatter.image.childImageSharp.fluid}
+              name={node.frontmatter.name}
+              position={node.frontmatter.position}
+              social={node.frontmatter.social}
+            />
+          ))}
         </div>
       </section >
 
@@ -77,13 +77,14 @@ export const query = graphql`
       edges {
         node {
           id
-          fields {
-            slug
-          }
           frontmatter {
             name
             position
-            twitter_username
+            social {
+              icon
+              name
+              url
+            }
             image {
               childImageSharp {
                 fluid(maxWidth: 300, maxHeight: 300) {
