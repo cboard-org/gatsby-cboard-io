@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 const BlogpostHeader = ({ children, title, description, date, cover }) => (
   <header className="blogposthead">
     <Img fluid={cover || {} || [] || ''} />
-        <div className="text">
-          <h2 className="mb-2">{title}</h2>
-          <h3>{description}</h3>
-          <p>{date}</p>
-        </div>
+    <div className="text">
+      <h2 className="mb-2">{title}</h2>
+      <h3>{description}</h3>
+      <p>{date}</p>
+    </div>
   </header>
 );
 

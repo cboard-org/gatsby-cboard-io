@@ -1,4 +1,7 @@
 // Bootstrap overrides for this template
+section {
+  padding-top: 70px;
+}
 .bg-primary {
   background: $theme-primary;
   background: -webkit-linear-gradient(
