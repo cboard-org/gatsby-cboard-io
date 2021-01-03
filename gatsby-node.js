@@ -1,5 +1,11 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
+const locales = require(`./config/i18n`);
+const {
+  localizedSlug,
+  findKey,
+  removeTrailingSlash,
+} = require(`./src/utils/gatsby-node-helpers`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
