@@ -1,0 +1,16 @@
+{
+    "languageMapping": [
+      {
+        "en": "/about",
+        "es": "/sobre"
+      },
+      {
+        "en": "/blog",
+        "es": "/blog"
+      },
+      {
+        "en": "/contact",
+        "es": "/contato"
+      }
+    ]
+  } 
