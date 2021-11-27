@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
 import Social from '../components/Social';
+import { Download } from '../components/home/Download/Download';
 import CboardLogo from '../components/CboardLogo/CboardLogo.component';
 import YouTube from 'react-youtube';
 
@@ -32,13 +33,13 @@ const IndexPage = () => (
                     className="btn btn-outline btn-xl"
                   >
                     Start Cboard
-              </a>
+                  </a>
                 </div>
                 <div className="p-3">
                   <Scroll type="id" element="download">
                     <a href="#download" className="btn btn-outline btn-xl">
                       Download
-                </a>
+                    </a>
                   </Scroll>
                 </div>
               </div>
@@ -47,30 +48,7 @@ const IndexPage = () => (
         </div>
       </div>
     </header>
-
-    <section className="download bg-primary text-center" id="download">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 mx-auto">
-            <h2 className="section-heading">
-              Get Cboard for Android!
-            </h2>
-            <p>
-              Cboard app is available for Android mobile devices. Download now to
-              start communicate
-            </p>
-            <div className="badges">
-              <a
-                className="badge-link"
-                href="https://play.google.com/store/apps/details?id=com.unicef.cboard"
-              >
-                <img src={gplay} alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Download />
 
     <section className="whatis bg-tertiary" id="whatis">
       <div className="container">
@@ -150,7 +128,7 @@ const IndexPage = () => (
                   <h3>40+ languages</h3>
                   <p className="text-muted">
                     Cboard comes with support for 40 languages and counting!. We strongly believe that this is key to reduce inequalities among people with disabilities in the world.
-                    </p>
+                  </p>
                 </div>
               </div>
               <div className="row">
@@ -159,7 +137,7 @@ const IndexPage = () => (
                   <h3>Modern interface</h3>
                   <p className="text-muted">
                     We use last technology trends to design and develop Cboard. Our ultimate goal is to offer a beautiful and intuitive interface that can be navigated without reading the user help.
-                    </p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -177,7 +155,7 @@ const IndexPage = () => (
             className="btn btn-outline btn-xl"
           >
             Let's Get Started!
-            </a>
+          </a>
         </div>
       </div>
       <div className="overlay"></div>
@@ -190,7 +168,7 @@ const IndexPage = () => (
         <Social />
         <div className="pt-4">
           <p>If you have any questions or queries send us a message
-           and we'll get back to you as soon as we can.</p>
+            and we'll get back to you as soon as we can.</p>
           <Contact />
         </div>
       </div>
@@ -202,13 +180,13 @@ const IndexPage = () => (
           <h2>Join us on GitHub</h2>
           <div className="col-lg-5 my-auto">
             <p>Cboard is an open-source project, we always appreciate a helping hand,
-            if you want to contribute you are invited to our GitHub repo</p>
+              if you want to contribute you are invited to our GitHub repo</p>
           </div>
           <a
             href="https://github.com/cboard-org/cboard"
             className="btn btn-outline btn-xl"
           >Cboard GitHub
-            </a>
+          </a>
         </div>
       </div>
       <div className="overlay"></div>
