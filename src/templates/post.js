@@ -8,12 +8,12 @@ import BlogpostHeader from '../components/BlogpostHeader';
 import SEO from '../components/SEO';
 import BlogPostContent from '../layouts/BlogPostContent';
 
-const Post = ({ data, pageContext }) => {
+const Post = ({ data, pageContext: { locale, isDefault } }) => {
   const { html, frontmatter, excerpt } = data.markdownRemark
   const { date, title, path, description } = frontmatter
   const image = frontmatter.image ? frontmatter.image.childImageSharp.fluid : undefined;
   return (
-    <Layout>
+    <Layout locale={locale} isDefault={isDefault}>
       <Header />
       <SEO
         title={title}

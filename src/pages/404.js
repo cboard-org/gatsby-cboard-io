@@ -3,8 +3,8 @@ import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 import { Link } from 'gatsby';
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({ pageContext: { locale, isDefault } }) => (
+  <Layout locale={locale} isDefault={isDefault}>
     <section className="cta">
       <div className="cta-content">
         <div className="container">

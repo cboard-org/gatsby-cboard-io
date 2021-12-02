@@ -7,10 +7,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 
-const Help = ({ data }) => {
+const Help = ({ data , pageContext: { locale, isDefault } }) => {
   const { html } = data.allMarkdownRemark.edges[0].node
   return (
-    <Layout>
+    <Layout locale={locale} isDefault={isDefault}>
       <Header />
       <SEO
         title="Cboard Help"

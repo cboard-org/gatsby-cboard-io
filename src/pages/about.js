@@ -11,12 +11,12 @@ import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 
 
-export default function About({ data }) {
+export default function About({ data, pageContext: { locale, isDefault } }) {
   const { edges } = data.allMarkdownRemark;
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
   console.log(data);
   return (
-    <Layout>
+    <Layout locale={locale} isDefault={isDefault}>
       <Header />
       <SEO
         title="About Us - Cboard"

@@ -20,6 +20,14 @@ module.exports = {
         icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `i18n`,
+        path: `${__dirname}/i18n`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,22 +45,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/config/translations`,
-        name: `translations`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/config/menu`,
         name: `menu`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/config/language-mapping`,
-        name: `language-mapping`,
       },
     },
     {

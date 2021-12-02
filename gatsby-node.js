@@ -1,11 +1,6 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
-const locales = require(`./config/i18n`);
-const {
-  localizedSlug,
-  findKey,
-  removeTrailingSlash,
-} = require(`./src/utils/gatsby-node-helpers`);
+const locales = require('./i18n/locales');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -48,3 +43,33 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+
+  // For each page, we’re deleting it, than creating it again for each
+  // language passing the locale to the page context
+  return new Promise(resolve => {
+    deletePage(page);
+
+    Object.keys(locales).map(lang => {
+      const isDefault = locales[lang].default || false;
+
+      const localizedPath = isDefault
+        ? page.path
+        : locales[lang].path + page.path;
+
+      return createPage({
+        ...page,
+        path: localizedPath,
+        context: {
+          locale: lang,
+          isDefault,
+        },
+      });
+    });
+
+    resolve();
+  });
+};
